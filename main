@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double gidilecekMesafe, odenecekUcret = 10;
+        System.out.print("Lütfen gidilecek mesafeyi km olarak yazınız\t: ");
+        gidilecekMesafe = scanner.nextDouble();
+        for (int a = 0; a <= gidilecekMesafe; a++) {
+            odenecekUcret += 2.2;
+
+        }
+        odenecekUcret = (odenecekUcret < 20) ? 20 : odenecekUcret;
+
+        System.out.println("Toplam ödencek tutar\t: " + odenecekUcret);
+    }
+}
